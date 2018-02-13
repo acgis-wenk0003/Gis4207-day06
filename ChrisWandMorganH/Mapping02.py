@@ -1,16 +1,6 @@
-#-------------------------------------------------------------------------------
-# Name:        module1
-# Purpose:
-#
-# Author:      chris
-#
-# Created:     13-02-2018
-# Copyright:   (c) chris 2018
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
+import arcpy
 
-def main():
-    pass
+mxd=arcpy.mapping.MapDocument("CURRENT")
 
-if __name__ == '__main__':
-    main()
+df=arcpy.mapping.ListDataFrames(mxd, "world")
+mxd.activeView=df[0]
