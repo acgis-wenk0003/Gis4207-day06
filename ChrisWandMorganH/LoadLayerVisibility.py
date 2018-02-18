@@ -3,7 +3,7 @@ import arcpy
 mxd=arcpy.mapping.MapDocument("CURRENT")
 infile=open("LayerVisibility.txt")
 txtlayers=[]
-maplayers=[]
+
 for line in infile:
         split=line.strip('\n').split(',')
         txtlayers.append(split)

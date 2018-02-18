@@ -1,14 +1,15 @@
 import arcpy
 
-outfile=open('SaveLayerVis_output.txt',"w")
+outfile=open('LayerVisibility.txt',"w")
 
 mxd=arcpy.mapping.MapDocument("MappingEx.mxd")
 
 for df in arcpy.mapping.ListDataFrames(mxd):
-    outfile.write(df.name+"\n")
+
     for layer in arcpy.mapping.ListLayers(mxd,'',df):
+        outfile.write(df.name+",")
         outfile.write("{}".format(layer))
-        outfile.write("{}".format(", "+str(layer.visible)+"\n"))
+        outfile.write("{}".format(","+str(layer.visible)+"\n"))
 
 outfile.close()
 del mxd
