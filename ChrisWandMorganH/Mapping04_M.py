@@ -1,6 +1,6 @@
 import arcpy
 
-mxd = arcpy.mapping.MapDocument('MappingEx.mxd')
+mxd = arcpy.mapping.MapDocument('CURRENT')
 
 df = arcpy.mapping.ListDataFrames(mxd)
 
