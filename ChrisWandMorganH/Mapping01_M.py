@@ -8,6 +8,8 @@ mxd.credits = 'David Viljoen'
 mxd.summary = 'Practice Python code'
 mxd.tags = 'arcpy.mapping, python, gis4207'
 
-mxd.saveACopy(r"C:\acgis\GIS4207-GIS-Customization\day06\lab06\MapEx2.mxd")
-
+try:
+    mxd.save()
+except Exception as e:
+    print e.message
 del mxd

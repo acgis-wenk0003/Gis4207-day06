@@ -1,0 +1,25 @@
+Canada	mjcities	True
+Canada	mjrroads	True
+Canada	province	True
+World	World Cities	True
+World	cities	True
+World	Continents	True
+World	world30	True
+World	continent	True
+World	world30	True
+San Francisco	Census	True
+San Francisco	blockgroups	True
+San Francisco	censustracts	True
+San Francisco	Cultural	True
+San Francisco	museums	True
+San Francisco	artgalleries	True
+San Francisco	theatre	True
+San Francisco	agencies	True
+San Francisco	customers	True
+San Francisco	pizza	True
+San Francisco	stores	True
+San Francisco	highways	True
+San Francisco	county2	True
+San Francisco	zip	True
+San Francisco	zipcodes	True
+San Francisco	sanfran.tif	True
