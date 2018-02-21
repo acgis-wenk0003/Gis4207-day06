@@ -22,5 +22,6 @@ for filename in mxdList:
 
     copyPath = os.path.join("../mxdTemp", filename)
     mxd.saveACopy(copyPath)
+    print filePath
 
     del mxd
